@@ -1,0 +1,24 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    color: var(--text-primary);
+}
+
+.loading-icon {
+    color: var(--text-primary);
+    animation: spinner 1s linear infinite;
+    will-change: spinner;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

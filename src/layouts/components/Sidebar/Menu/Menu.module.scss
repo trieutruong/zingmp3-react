@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    color: var(--text-primary);
+    font-size: 1.8rem;  
+    font-weight: 600;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    line-height: 100%;
+    transition: background-color ease-in-out 0.2s;
+
+    &.active {
+        background-color: var(--alpha-bg)
+    }
+
+    &:hover {
+        background-color: var(--primary-color);
+    }
+}
+
+.icon {
+    display: inline-block;
+    min-width: 30px;
+}

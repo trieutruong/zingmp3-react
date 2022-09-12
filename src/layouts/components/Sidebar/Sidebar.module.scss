@@ -1,0 +1,16 @@
+.wrapper {
+    height: 100%;
+    background-color: var(--alpha-bg);
+    position: fixed;
+    width: var(--width-left-sidebar);
+    left: 0;
+    background-color: var(--alpha-bg);
+}
+
+.logo {
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+    justify-content: center;
+}
+

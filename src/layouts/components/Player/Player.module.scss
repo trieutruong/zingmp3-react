@@ -1,0 +1,143 @@
+.wrapper {
+    height: 88px;
+    padding: 12px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #293f5a;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.name {
+    margin-left: 8px;
+    height: 40px;
+}
+
+.title {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+}
+
+.artist {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.control {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.handler {
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+    .icon {
+        font-size: 2rem;
+        color: var(--white-color);
+    }
+
+    .btn:hover {
+        background-color: var(--alpha-bg);
+    }
+}
+
+
+
+.range {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+
+    .time {
+        color: var(--text-secondary);
+        font-size: 1.2rem;
+    }
+
+    .song-progress {
+        width: 100%;
+    }
+}
+
+.volume {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.song-progress,
+.volume-progress {
+    -webkit-appearance: none;
+    height: 4px;
+    background-color: var(--white-color);
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        height: 8px;
+    }
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        background-color: var(--text-secondary);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &:hover::-webkit-slider-thumb {
+        transform: scale(1.2);
+    }
+}
+
+.icon {
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.play-icon,
+.pause-icon {
+    color: var(--white-color);
+    transform: scale(3);
+}
+
+.pause-icon {
+    display: none;
+}
+
+.playing .play-icon {
+    display: none;
+}
+
+.playing .pause-icon {
+    display: inline-block;
+}
+
+.icon-mute {
+    display: none;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.sidebar {
+    width: var(--width-left-sidebar);
+}
+
+.content {
+    flex: 1;
+    padding: var(--content-padding);
+    overflow-y: auto;
+    margin-bottom: 90px;
+}
+
+.page {
+    margin-top: calc(var(--header-height) + 40px);
+}

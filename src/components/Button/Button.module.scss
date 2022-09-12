@@ -1,0 +1,76 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-secondary);
+    transition: all linear 0.2s;
+    min-width: 40px;
+    min-height: 40px;
+
+    + .wrapper {
+        margin-left: 8px;
+    }
+
+    &:nth-child(3) {
+        margin-right: 8px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    &.disabled {
+        // đưa disabled vào đây để nó có độ ưu tiên hơn các style khác
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.playing .icon {
+    display: none;
+}
+
+.playing .icon-right {
+    display: inline-block;
+}
+
+.primary {
+    background-color: var(--alpha-bg);
+}
+
+.rounded {
+    border-radius: 999px;
+}
+
+.secondary {
+    background-color: var(--secondary-bg);
+}
+
+.outline {
+    border: 1px solid var(--white-color);
+}
+
+.small {
+    min-width: 40px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 8px;
+}
+
+.title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.icon-right {
+    margin-left: auto;
+    transform: scale(1.2);
+    font-weight: 500;
+}
